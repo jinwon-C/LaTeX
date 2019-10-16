@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{makecell, array}
+
+\newcolumntype{$}{>{\global\let\currentrowstyle\relax}}
+\newcolumntype{^}{>{\currentrowstyle}}
+\newcommand{\rowstyle}[1]{\gdef\currentrowstyle{#1}%
+ #1\ignorespaces
+}
+
+\begin{document}
+\begin{table}
+\caption{Accuracy Comparision with Models}
+\begin{center}
+\begin{tabular}{$c^c^c^c^c}
+
+\Xhline{3\arrayrulewidth}
+\rowstyle{\bfseries}
+Accelerometer&Non-audible Sound&Add&Max&Concat\\
+\hline
+79.4\%&73.6\%&86.0\%&83.8\%&88.8\%\\
+\Xhline{3\arrayrulewidth}
+
+\end{tabular}
+\end{center}
+\end{table}
+\end{document}
