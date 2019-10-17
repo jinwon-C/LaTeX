@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{makecell, array, tabu}
+
+%\renewcommand{\arraystretch}{2}
+
+\begin{document}
+\begin{table}
+\caption{Accuracy Comparision with Models}
+\begin{center}
+\begin{tabu} to 12cm {X[c]X[c]X[c]X[c]X[c]}
+
+\Xhline{3\arrayrulewidth}
+\rowfont{\bfseries}
+Accelerometer&Sound&Add&Max&Concat\\
+\hline
+79.4\%&73.6\%&86.0\%&83.8\%&88.8\%\\
+\Xhline{3\arrayrulewidth}
+
+\end{tabu}
+\end{center}
+\end{table}
+\end{document}
